@@ -1,0 +1,2 @@
+docker build -t my_php_app .
+docker run -i --rm -p 8080:80 --name php_container my_php_app
