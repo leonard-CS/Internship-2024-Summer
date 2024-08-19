@@ -16,6 +16,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     echo "<table border='1'>
             <tr>
+                <th>ID</th>
                 <th>Title</th>
                 <th>Content</th>
                 <th>Created At</th>
@@ -25,6 +26,7 @@ if ($result->num_rows > 0) {
         $file_path = 'posts/' . $row['filename'];
         $content = file_exists($file_path) ? htmlspecialchars(file_get_contents($file_path)) : 'Content not found';
         echo "<tr>
+                <td>" . htmlspecialchars($row['id']) . "</td>
                 <td>" . htmlspecialchars($row['title']) . "</td>
                 <td>" . $content . "</td>
                 <td>" . htmlspecialchars($row['created_at']) . "</td>

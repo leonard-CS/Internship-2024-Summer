@@ -52,9 +52,9 @@ $conn->close();
     <h1>Edit Post</h1>
     <form action="edit_post.php?id=<?php echo $id; ?>" method="POST">
         <h2>Title</h2>
-        <textarea name="title" rows="1" cols="100" placeholder="Enter your title here..."></textarea>
+        <textarea name="title" rows="1" cols="100" placeholder="Enter your title here..."><?php echo htmlspecialchars($title); ?></textarea>
         <h2>Content</h2>
-        <textarea name="content" rows="10" cols="100" placeholder="Enter your content here..."></textarea>
+        <textarea name="content" rows="10" cols="100" placeholder="Enter your content here..."><?php echo htmlspecialchars($content); ?></textarea>
         <br>
         <button type="submit">Update Post</button>
     </form>
