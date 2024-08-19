@@ -1,3 +1,12 @@
+docker rmi $(docker images -q my_php_app) -f
 docker build -t my_php_app .
+
 docker run -i --rm -p 8080:80 --name php_container my_php_app
 docker run -i --rm -p 8080:80 --name php_container my_php_app /bin/bash
+docker exec -it php_container /bin/bash
+
+docker run -i --rm -p 8080:80 --name php_container my_php_app /bin/bash -c "exec /bin/bash"
+
+docker-compose up -d
+docker-compose down
+docker exec -it timestamp-php-web-1 /bin/bash
