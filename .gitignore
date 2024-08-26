@@ -2,3 +2,5 @@
 test.txt
 *.tsq
 *.tsr
+
+*.pem
