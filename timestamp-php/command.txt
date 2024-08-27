@@ -8,5 +8,6 @@ docker exec -it php_container /bin/bash
 docker run -i --rm -p 8080:80 --name php_container my_php_app /bin/bash -c "exec /bin/bash"
 
 docker-compose up -d
+http://localhost:8080/
 docker-compose down
 docker exec -it timestamp-php-web-1 /bin/bash
