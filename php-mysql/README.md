@@ -19,3 +19,9 @@ You can access the MySQL database using a MySQL client with the following creden
 3. Query data: [[link]](http://localhost:8080/query_data.php)[(query_data.php)](src/query_data.php)
 4. Update data: [[link]](http://localhost:8080/update_data.php)[(update_data.php)](src/update_data.php)
 5. Delete data: [[link]](http://localhost:8080/delete_data.php)[(delete_data.php)](src/delete_data.php)
+
+## PHPMyAdmin
+PHPMyAdmin is a popular web-based tool for managing MySQL databases. To use PHPMyAdmin with Docker: [docker-compose.yml](docker-compose.yml)
+
+### Access PHPMyAdmin
+Open your web browser and go to `http://localhost:8081`.
